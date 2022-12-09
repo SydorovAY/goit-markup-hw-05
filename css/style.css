@@ -53,7 +53,6 @@ img {
 
 .list {
 	list-style: none;
-	display: flex;
 }
 
 .link {
@@ -62,15 +61,11 @@ img {
 
 .title {
 	color: var(--Headings-color);
-	font-weight: 500;
+	font-weight: 700;
 	letter-spacing: 0.02em;
 }
 
 .conteiner {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
 	width: 1158px;
 	padding: 0 15px 0 15px;
 	margin: 0 auto;
@@ -97,6 +92,11 @@ img {
 	box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
+.header .conteiner {
+	display: flex;
+	align-items: center;
+}
+
 .conteiner>.logo {
 	color: var(--Headings-color);
 	margin-right: 77px;
@@ -107,8 +107,10 @@ img {
 	color: var(--Focused-link-color);
 }
 
-.main-nav {
+.site-nav {
+	display: flex;
 	margin-right: auto;
+	padding: 24px 0;
 }
 
 .site-nav .nav-list:not(:last-child) {
@@ -138,6 +140,10 @@ img {
 
 /* ===== contacts=====  */
 
+.contacts {
+	display: flex;
+}
+
 .contacts-list {
 	padding: 24px 0;
 	line-height: 1.5;
@@ -154,10 +160,7 @@ img {
 }
 
 .contacts-link:hover,
-.contacts-link:focus {
-	color: var(--Focused-link-color);
-}
-
+.contacts-link:focus,
 .contacts-link:active {
 	color: var(--Focused-link-color);
 }
@@ -165,49 +168,54 @@ img {
 /*=========================== hero ===================== */
 
 .hero {
-	padding: 192px 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	margin: 0 auto;
-	background-repeat: no-repeat;
-	background-position: center;
+	padding: 192px 0;
+
 	background-color: var(--Headings-color);
 }
 
 .overlay {
 	max-width: 1440px;
 	height: 603px;
-	margin: 0 auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+
 	background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 		url(../images/bg_img/people_office.jpg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center;
 }
 
 .hero .title {
 	text-align: center;
-	color: var(--bg-white-color);
 	font-size: 56px;
 	line-height: 1.07;
-	margin: 0 auto;
 	width: 496px;
+
 	margin-bottom: 48px;
+
+	color: var(--bg-white-color);
 }
 
 .button-order {
 	display: block;
-	background-color: var(--Focused-link-color);
-	color: var(--bg-white-color);
-	font-family: inherit;
 	font-weight: 500;
 	line-height: 1.19;
 	letter-spacing: 0.04em;
-	margin: 0 auto;
-	cursor: pointer;
-	border-style: none;
-	border-radius: 4px;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
 	padding: 16px 32px;
 
+	border-style: none;
+	border-radius: 4px;
+	cursor: pointer;
+
+	background-color: var(--Focused-link-color);
+	color: var(--bg-white-color);
+	font-family: inherit;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .button-order:hover,
@@ -223,10 +231,15 @@ img {
 
 /* ===== section-feature ===== */
 
+.feature-list {
+	display: flex;
+}
+
 .list-title {
 	font-weight: 600;
 	font-size: 20px;
 	line-height: 1.2;
+
 	margin-bottom: 8px;
 }
 
@@ -244,12 +257,14 @@ img {
 
 .future-icon {
 	display: flex;
-	background-color: var(--backgrounds-Light-color);
 	height: 112px;
-	border-radius: 4px;
+
 	justify-content: center;
 	align-items: center;
 	margin-bottom: 8px;
+
+	border-radius: 4px;
+	background-color: var(--backgrounds-Light-color);
 }
 
 
@@ -257,10 +272,10 @@ img {
 
 .section.specialization {
 	padding-bottom: 120px;
+	text-align: center;
 }
 
 .specialization-title {
-	margin: 0 auto;
 	font-size: 36px;
 	line-height: 1.11;
 	text-transform: capitalize;
@@ -268,6 +283,7 @@ img {
 }
 
 .specialization-list {
+	display: flex;
 	flex-basis: calc(100 / 3 - 48);
 }
 
@@ -278,29 +294,33 @@ img {
 /* ===== section our team ===== */
 
 .section.team {
-	background-color: var(--backgrounds-Light-color);
 	padding-top: 120px;
 	padding-bottom: 120px;
+	text-align: center;
+
+	background-color: var(--backgrounds-Light-color);
 }
+
 
 .team-title {
 	font-size: 36px;
 	line-height: 1.11;
-	text-transform: capitalize;
 
 	margin: 0 auto;
 	margin-bottom: 72px;
 }
 
 .team-list {
+	display: flex;
 	flex-basis: calc(100 / 4 - 72);
 }
 
 .team-list>.card {
-	background-color: var(--bg-white-color);
 	text-align: center;
-	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 	border-radius: 0px 0px 4px 4px;
+
+	background-color: var(--bg-white-color);
+	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list>.card:not(:last-child) {
@@ -314,11 +334,11 @@ img {
 .card-title {
 	font-size: 20px;
 	line-height: 1.2;
+
 	margin-bottom: 8px;
 }
 
 .card-content .text {
-	font-weight: 600;
 	margin-bottom: 12px;
 }
 
@@ -326,19 +346,20 @@ img {
 	margin-right: var(--card-set-gap);
 }
 
-.social-list-item {
+.social-list {
 	display: flex;
-	display: block;
 }
 
 .social-list-item .link {
 	display: flex;
-	background-color: var(--Focused-link-color);
-	border-radius: 50%;
-	width: 40px;
-	height: 40px;
 	justify-content: center;
 	align-items: center;
+
+	width: 40px;
+	height: 40px;
+
+	border-radius: 50%;
+	background-color: var(--Focused-link-color);
 }
 
 .social-list-item .link:hover,
@@ -349,15 +370,19 @@ img {
 /* ===== Customers ====== */
 
 .section-customers {
+	text-align: center;
 	padding: 120px 0;
 }
 
+.customer-list {
+	display: flex;
+	justify-content: center;
+}
+
 .customers-title {
-	font-weight: 700;
 	font-size: 36px;
 	line-height: 1.17;
 	letter-spacing: 0.03em;
-	margin: 0 auto;
 	margin-bottom: 72px;
 }
 
@@ -370,11 +395,13 @@ img {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	color: var(--Helper-text-color);
-	border: 1px solid var(--Helper-text-color);
-	border-radius: 4px;
+
 	width: 100%;
 	height: 100%;
+
+	border-radius: 4px;
+	color: var(--Helper-text-color);
+	border: 1px solid var(--Helper-text-color);
 }
 
 .customers-item :hover,
@@ -394,38 +421,38 @@ img {
 /* ================ footer ============= */
 
 .footer {
-	background-color: var(--Headings-color);
 	padding: 100px 0;
-	min-width: 1440px;
+	background-color: var(--Headings-color);
 }
 
 .footer .conteiner {
-	align-items: flex-start;
-	justify-content: flex-start;
+	display: flex;
 }
 
 .footer-summary {
-	color: var(--Subtle-backgrounds-color);
 	width: 264px;
 	margin-right: 120px;
+	color: var(--Subtle-backgrounds-color);
 }
 
 .footer .logo {
-	color: var(--backgrounds-Light-color);
+
 	display: block;
 	margin-bottom: 16px;
+	color: var(--backgrounds-Light-color);
 }
 
 .footer-social {
-	display: flex;
-	flex-direction: column;
 	width: 208px;
 }
 
+.footer-social-list {
+	display: flex;
+}
+
 .footer-social-media {
-	color: var(--bg-white-color);
-	letter-spacing: 0.02em;
 	margin-bottom: 16px;
+	color: var(--bg-white-color);
 }
 
 .footer-social-item:not(:last-child) {
@@ -434,12 +461,15 @@ img {
 
 .footer-social-item .link {
 	display: flex;
-	background: rgba(255, 255, 255, 0.1);
+	font-weight: 700;
 	width: 40px;
 	height: 40px;
-	border-radius: 50%;
+
 	justify-content: center;
 	align-items: center;
+
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-item .link:hover,
@@ -457,9 +487,10 @@ img {
 /* ===== portfolio filter ===== */
 
 .filter-nav {
+	display: flex;
 	justify-content: center;
-	margin: auto;
 	margin-bottom: 72px;
+
 }
 
 .filter-nav .filter-nav-btn:not(:last-child) {
@@ -467,18 +498,19 @@ img {
 }
 
 .butoon-filter {
-	background-color: var(--backgrounds-Light-color);
-	color: var(--Focused-link-color);
+
 	font-family: inherit;
 	font-weight: 700;
 	line-height: 1.5;
 	letter-spacing: 0.04em;
 
-	border: 1px solid var(--Subtle-backgrounds-color);
+	padding: 12px 24px;
 	border-radius: 4px;
 	cursor: pointer;
-
-	padding: 12px 24px;
+	
+			color: var(--Focused-link-color);
+		background-color: var(--backgrounds-Light-color);
+			border: 1px solid var(--Subtle-backgrounds-color);
 }
 
 .butoon-filter:hover,
@@ -497,8 +529,9 @@ img {
 /* ===== portfolio list ===== */
 
 .portfolio-list {
-	flex-basis: calc(100 / 3 - 48);
+	display: flex;
 	flex-wrap: wrap;
+	flex-basis: calc(100 / 3 - 48);
 }
 
 .portfolio-list>.item:not(:nth-last-child(-n + 3)) {
@@ -511,8 +544,8 @@ img {
 
 .list-content {
 	padding: 32px 16px;
-	border: 0.5px solid var(--backgrounds-Light-color);
 	border-top: none;
+		border: 0.5px solid var(--backgrounds-Light-color);
 }
 
 .portfolio-title {
