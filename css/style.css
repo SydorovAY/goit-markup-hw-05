@@ -246,7 +246,7 @@ img {
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 	transition-property: var(--Focused-link-color);
-	transition-duration: 2500ms;
+	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -622,7 +622,7 @@ display: block;
 	border: 1px solid var(--Subtle-backgrounds-color);
 
 	transition-property: background-color;
-	transition-duration: 2500ms;
+	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
