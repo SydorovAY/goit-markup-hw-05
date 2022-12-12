@@ -73,7 +73,7 @@ img {
 
 .conteiner {
 	width: 1158px;
-	padding: 0 15px ;
+	padding: 0 15px;
 	margin: 0 auto;
 }
 
@@ -129,14 +129,15 @@ img {
 	padding: 24px 0;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-link:hover,
 .nav-link:focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	color: var(--Body-text-color);
 }
 
@@ -152,11 +153,11 @@ img {
 	position: absolute;
 	display: block;
 	content: "";
-	
+
 	width: 100%;
-		height: 4px;
+	height: 4px;
 	bottom: 0;
-	
+
 	background-color: var(--Focused-link-color);
 	border-radius: 2px;
 }
@@ -180,15 +181,16 @@ img {
 .contacts-link {
 	color: var(--Body-text-color);
 	padding: 24px 0;
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover,
 .contacts-link:focus,
 .contacts-link:active {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	color: var(--Focused-link-color);
 }
 
@@ -242,14 +244,15 @@ img {
 	color: var(--bg-white-color);
 	font-family: inherit;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-order:hover,
 .button-order:focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	background-color: var(--Focused-link-color);
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -274,6 +277,11 @@ img {
 	top: 0;
 	left: 0;
 	background-color: rgba(46, 47, 66, 0.4);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -292,6 +300,7 @@ img {
 	box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12),
 		0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+
 }
 
 .close-modal {
@@ -309,8 +318,6 @@ img {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	background-color: var(--Subtle-backgrounds-color);
 }
-
-
 
 /* ===== section-feature ===== */
 
@@ -443,14 +450,12 @@ img {
 
 	border-radius: 50%;
 	background-color: var(--Focused-link-color);
+
+
 }
 
 .social-list-item .link:hover,
 .social-list-item .link:focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	background: var(--Success-messages-color);
 }
 
@@ -490,14 +495,15 @@ img {
 	border-radius: 4px;
 	color: var(--Helper-text-color);
 	border: 1px solid var(--Helper-text-color);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-item :hover,
 .customers-item :focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	color: var(--Focused-link-color);
 	border-color: var(--Focused-link-color);
 }
@@ -508,6 +514,8 @@ img {
 
 .customers-logo {
 	fill: currentColor;
+	pointer-events: none;
+
 }
 
 /* ================ footer ============= */
@@ -522,7 +530,7 @@ img {
 }
 
 .footer-summary {
-	
+
 	width: 264px;
 	margin-right: 120px;
 }
@@ -567,14 +575,15 @@ img {
 
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-item .link:hover,
 .footer-social-item .link:focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	background: var(--Success-messages-color);
 }
 
@@ -611,14 +620,15 @@ img {
 	color: var(--Focused-link-color);
 	background-color: var(--backgrounds-Light-color);
 	border: 1px solid var(--Subtle-backgrounds-color);
+
+	transition-property: background-color;
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .butoon-filter:hover,
 .butoon-filter:focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	background-color: var(--Focused-link-color);
 	color: var(--bg-white-color);
 	box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -636,11 +646,52 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: calc((100% - 48px) / 3);
+
+
 }
 
 .portfolio-list .item {
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+
 }
+
+.portfolio-list-img {
+	display: block;
+	position: relative;
+	overflow: hidden;
+}
+
+.portfolio-list-info .text {
+	color: var(--backgrounds-Light-color);
+}
+
+.portfolio-list-info {
+	position: absolute;
+	display: block;
+	padding: 40px 32px;
+
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+
+	transform: translateY(100%);
+	background-color: var(--Focused-link-color);
+
+	transition-property: var(--Focused-link-color);
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.portfolio-list .item:hover .portfolio-list-info {
+
+	transform: translateY(0);
+	opacity: 1;
+}
+
+
 
 .portfolio-list>.item:not(:nth-last-child(-n + 3)) {
 	margin-bottom: calc(2 * var(--card-set-gap));
@@ -664,9 +715,5 @@ img {
 
 .portfolio-list .item:hover,
 .portfolio-list .item:focus {
-	transition-duration: 250ms;
-	transition-timing-function:
-		cubic-bezier(0.4, 0, 0.2, 1);
-
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
