@@ -130,7 +130,7 @@ img {
 	line-height: 1.5;
 	letter-spacing: 0.02em;
 
-	transition-property: background-color;
+	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -182,7 +182,7 @@ img {
 	color: var(--Body-text-color);
 	padding: 24px 0;
 
-	transition-property: background-color;
+	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -245,8 +245,8 @@ img {
 	font-family: inherit;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-	transition-property: background-color;
-	transition-duration: 250ms;
+	transition-property: var(--Focused-link-color);
+	transition-duration: 2500ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -278,7 +278,7 @@ img {
 	left: 0;
 	background-color: rgba(46, 47, 66, 0.4);
 
-	transition-property: background-color;
+	transition-property: rgba(46, 47, 66, 0.4) ;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -496,7 +496,7 @@ img {
 	color: var(--Helper-text-color);
 	border: 1px solid var(--Helper-text-color);
 
-	transition-property: background-color;
+	transition-property: color;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -576,7 +576,7 @@ img {
 	border-radius: 50%;
 	background: rgba(255, 255, 255, 0.1);
 
-	transition-property: background-color;
+	transition-property: rgba(255, 255, 255, 0.1);
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -608,7 +608,7 @@ img {
 }
 
 .butoon-filter {
-
+display: block;
 	font-family: inherit;
 	font-weight: 700;
 	line-height: 1.5;
@@ -622,7 +622,7 @@ img {
 	border: 1px solid var(--Subtle-backgrounds-color);
 
 	transition-property: background-color;
-	transition-duration: 250ms;
+	transition-duration: 2500ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
