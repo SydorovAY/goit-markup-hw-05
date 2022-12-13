@@ -218,7 +218,7 @@ img {
 		url(../images/bg_img/people_office.jpg);
 }
 
-.hero .title {
+.hero .title { 
 	text-align: center;
 	font-size: 56px;
 	line-height: 1.07;
@@ -266,11 +266,12 @@ img {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
+	transform: translate(0);
 }
 
 .backdrop {
 	position: fixed;
-
+display: block;
 	width: 100%;
 	height: 100%;
 
@@ -278,11 +279,18 @@ img {
 	left: 0;
 	background-color: rgba(46, 47, 66, 0.4);
 
-	transition-property: rgba(46, 47, 66, 0.4);
+	opacity: 1;
+	transition-property: inherit;
+	transform:translate(1);
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.backdrop.is-hidden .modal {
+	transform: translate(-50%, -50%) scale(0);
+}
+
 
 .modal {
 	position: absolute;
@@ -293,7 +301,6 @@ img {
 
 	left: 50%;
 	top: 50%;
-	transform: translate(-50%, -50%);
 
 	border-radius: 4px;
 	background-color: var(--bg-modal-color);
@@ -301,6 +308,11 @@ img {
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12),
 		0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 
+			transition-property: inherit;
+	transform: translate(-50%, -50%) scale(1);
+	transition-duration: 300ms;
+	transition-timing-function:
+			cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal {
@@ -690,9 +702,8 @@ img {
 }
 
 .portfolio-list .item:hover .portfolio-list-info {
+			transform: translateY(0);
 
-	transform: translateY(0);
-	opacity: 1;
 }
 
 
