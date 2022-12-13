@@ -278,7 +278,7 @@ img {
 	left: 0;
 	background-color: rgba(46, 47, 66, 0.4);
 
-	transition-property: rgba(46, 47, 66, 0.4) ;
+	transition-property: rgba(46, 47, 66, 0.4);
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -451,6 +451,10 @@ img {
 	border-radius: 50%;
 	background-color: var(--Focused-link-color);
 
+	transition-property: var(--Focused-link-color);
+	transition-duration: 250ms;
+	transition-timing-function:
+		cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -608,7 +612,7 @@ img {
 }
 
 .butoon-filter {
-display: block;
+	display: block;
 	font-family: inherit;
 	font-weight: 700;
 	line-height: 1.5;
