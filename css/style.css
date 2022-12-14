@@ -218,7 +218,7 @@ img {
 		url(../images/bg_img/people_office.jpg);
 }
 
-.hero .title { 
+.hero .title {
 	text-align: center;
 	font-size: 56px;
 	line-height: 1.07;
@@ -245,7 +245,7 @@ img {
 	font-family: inherit;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
-	transition-property: var(--Focused-link-color);
+	transition-property: box-shadow;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -271,7 +271,7 @@ img {
 
 .backdrop {
 	position: fixed;
-display: block;
+	display: block;
 	width: 100%;
 	height: 100%;
 
@@ -281,7 +281,7 @@ display: block;
 
 	opacity: 1;
 	transition-property: inherit;
-	transform:translate(1);
+	transform: translate(1);
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -289,6 +289,7 @@ display: block;
 
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0);
+	top: 0;
 }
 
 
@@ -308,11 +309,11 @@ display: block;
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12),
 		0px 1px 2px 0px rgba(0, 0, 0, 0.2);
 
-			transition-property: inherit;
+	transition-property: inherit;
 	transform: translate(-50%, -50%) scale(1);
 	transition-duration: 300ms;
 	transition-timing-function:
-			cubic-bezier(0.4, 0, 0.2, 1);
+		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-modal {
@@ -463,7 +464,7 @@ display: block;
 	border-radius: 50%;
 	background-color: var(--Focused-link-color);
 
-	transition-property: var(--Focused-link-color);
+	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -590,9 +591,9 @@ display: block;
 	align-items: center;
 
 	border-radius: 50%;
-	background: rgba(255, 255, 255, 0.1);
+	background-color: rgba(255, 255, 255, 0.1);
 
-	transition-property: rgba(255, 255, 255, 0.1);
+	transition-property: background-color;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -694,7 +695,7 @@ display: block;
 	transform: translateY(100%);
 	background-color: var(--Focused-link-color);
 
-	transition-property: var(--Focused-link-color);
+	transition-property: inherit;
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
@@ -702,7 +703,7 @@ display: block;
 }
 
 .portfolio-list .item:hover .portfolio-list-info {
-			transform: translateY(0);
+	transform: translateY(0);
 
 }
 
