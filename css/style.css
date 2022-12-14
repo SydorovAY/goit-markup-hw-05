@@ -266,8 +266,7 @@ img {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	transform: translate(0);
-}
+	}
 
 .backdrop {
 	position: fixed;
@@ -280,15 +279,13 @@ img {
 	background-color: rgba(46, 47, 66, 0.4);
 
 	opacity: 1;
-	transition-property: inherit;
-	transform: translate(1);
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden .modal {
-	transform: translate(-50%, -50%) scale(0);
+	transform: translate(-50%, -50%);
 	top: 0;
 }
 
