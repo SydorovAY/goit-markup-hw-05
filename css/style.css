@@ -267,7 +267,7 @@ img {
 	visibility: hidden;
 	opacity: 0;
 	pointer-events: none;
-	}
+}
 
 .backdrop {
 	position: fixed;
@@ -466,7 +466,6 @@ img {
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .social-list-item .link:hover,
@@ -530,7 +529,6 @@ img {
 .customers-logo {
 	fill: currentColor;
 	pointer-events: none;
-
 }
 
 /* ================ footer ============= */
@@ -615,7 +613,6 @@ img {
 	display: flex;
 	justify-content: center;
 	margin-bottom: 72px;
-
 }
 
 .filter-nav .filter-nav-btn:not(:last-child) {
@@ -661,13 +658,11 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	flex-basis: calc((100% - 48px) / 3);
-
-
 }
 
-.portfolio-list .item {
+.portfolio-list .link {
+	display: block;
 	box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
-
 }
 
 .portfolio-list-img {
@@ -697,15 +692,11 @@ img {
 	transition-duration: 250ms;
 	transition-timing-function:
 		cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .portfolio-list .item:hover .portfolio-list-info {
 	transform: translateY(0);
-
 }
-
-
 
 .portfolio-list>.item:not(:nth-last-child(-n + 3)) {
 	margin-bottom: calc(2 * var(--card-set-gap));
