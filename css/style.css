@@ -694,15 +694,15 @@ img {
 		cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-list .item:hover .portfolio-list-info {
+.portfolio-list .link:hover .portfolio-list-info {
 	transform: translateY(0);
 }
 
-.portfolio-list>.item:not(:nth-last-child(-n + 3)) {
+.portfolio-list .item:not(:nth-last-child(-n + 3)) {
 	margin-bottom: calc(2 * var(--card-set-gap));
 }
 
-.portfolio-list>.item:not(:nth-child(3n)) {
+.portfolio-list .item:not(:nth-child(3n)) {
 	margin-right: var(--card-set-gap);
 }
 
